@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uyen Nguyen</title>
+        <link rel="stylesheet" href="style-sheet.css">
+    </head>
+    <body>
+<!-- Website Menu -->
+        <nav class="menu">
+            <ul>
+                <li><a class="menu-button" href="index.html">Home</a></li>
+                <li><a class="menu-button" href="http-section1.html">HTTP 0.9-1.1</a></li>
+                <li><a class="menu-button" href="http-section2.html">HTTP 2-3</a></li>
+                <li><a class="menu-button" href="keyconcepts.html">Key Concepts</a></li>
+                <li><a class="menu-button" href="references.html">References</a></li>
+                <li><a class="menu-button" href="about.html">About me</a></li>
+            </ul>
+        </nav>
+        <!-- HTTP Section 1 Grid -->
+         <!-- Wrap the grid in <div> and use separate containers for the h1 header 
+            and grid content for different stylization-->
+        <div class="HTTP-grid">
+            <div class="HTTP-header">        
+                <h1 id="HTTP-section-header">HTTP 0.9, 1.0, and 1.1</h1>
+            </div>
+            <div class="HTTP-content">
+                <h2>HTTP/0.9</h2>
+                <p>The first HTTP version was very simple. The HTTP Request header was one line and contained one method, GET.
+                    The response only contained the HTML document. Unlike later HTTP versions, the connection was terminated after the request gets sent. 
+                </p>
+                <h2>HTTP/1.0</h2>
+                <p>The HTTP request now contained the HTTP version and status code. HTTP became more versatile as hypermedia can be sent
+                    and not just hypertext documents. New HTTP headers and methods were introduced.
+                </p>
+                <h2>HTTP/1.1</h2>
+                <p>With continuous development in HTTP versions, HTTP 1.1 was officially standardized. It introduced the keepalive connection, where 
+                    the connection between the client and server no longer closed after every request. It remained opened, allowing the user to 
+                    use the same connection to send more requests. 
+                </p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>IT 3203 Class Web Development Project</p>
+        </div>
+    </body>
+</html>

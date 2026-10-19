@@ -1,0 +1,135 @@
+/* Body Content */
+/* Create a uniform appearance by applying the same style on body contents */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    background-color:#FFF;
+    margin-right:100px;
+    margin-left:100px;
+}
+
+/* Horizontal Rule */
+
+hr {
+    color:#0B5351;
+}
+
+/* Menu */
+.menu ul{
+    list-style-type:none;
+    background-color:#53A548;
+    overflow:hidden;
+    margin:0;
+}
+
+.menu li {
+    float: left;
+    padding:30px;
+    
+}
+
+.menu a {
+    text-decoration:none;
+    font-size:35px;
+    font-weight:bold;
+    color:#F3FEEE;
+}
+
+
+a.menu-button:hover {
+    background-color:#0B5351;
+}
+
+/* Table of Contents */ 
+
+#table-of-contents-header {
+    background-color:#0B5351;
+    color:#F3FEEE;
+    padding:16px;
+}
+
+.table-of-contents {
+    background-color:#A3D29B;
+    text-align:center;
+}
+
+.table-of-contents li {
+    list-style-type:none;
+    font-weight:bold;
+    padding:8px;
+}
+
+/* Tables */
+
+table, th, td {
+    border: 5px solid;
+    padding:20px;
+    border-collapse: collapse;
+}
+
+.key-terms th {
+    font-size:35px;
+    font-weight:bold;
+    text-align:left;
+}
+
+/* HTTP Topic Section Grids */
+
+#HTTP-section-header {
+    display:block;
+    background-color:#0B5351;
+    color:#F3FEEE;
+}
+
+.HTTP-grid {
+    display:grid;
+    background-color:#A3D29B;
+    margin:35px;
+}
+
+.HTTP-header {
+    text-align:center;
+}
+
+.HTTP-content h2 {
+    padding-left:100px;
+}
+
+.HTTP-content p {
+    padding-left:200px;
+    padding-right:100px;
+}
+
+/* Footer */
+
+.footer {
+    background-color:#53A548;
+    display:block;
+    bottom:0px;
+    width:100%;
+}
+
+.footer p {
+    text-align:center;
+    color:#F3FEEE;
+    font-size: 30px;
+    padding:30px;
+}
+
+/* References */
+
+.references ul {
+    list-style-type:none;
+}
+
+/* Learning Resources */
+
+.learning-resources a {
+    margin:35px;
+}
+
+/* About Me */
+
+.about-me p {
+    margin:35px;
+}
