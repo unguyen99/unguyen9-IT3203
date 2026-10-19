@@ -2,7 +2,7 @@
 /* Create a uniform appearance by applying the same style on body contents */
 body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 16px;
     background-color:#FFF;
     margin-right:100px;
     margin-left:100px;
@@ -30,7 +30,7 @@ hr {
 
 .menu a {
     text-decoration:none;
-    font-size:35px;
+    font-size:16px;
     font-weight:bold;
     color:#F3FEEE;
 }
@@ -38,6 +38,12 @@ hr {
 
 a.menu-button:hover {
     background-color:#0B5351;
+}
+
+/* Image */
+
+#google-image {
+    width:500px;
 }
 
 /* Table of Contents */ 
@@ -68,7 +74,7 @@ table, th, td {
 }
 
 .key-terms th {
-    font-size:35px;
+    font-size:16px;
     font-weight:bold;
     text-align:left;
 }
@@ -112,7 +118,7 @@ table, th, td {
 .footer p {
     text-align:center;
     color:#F3FEEE;
-    font-size: 30px;
+    font-size: 16px;
     padding:30px;
 }
 
