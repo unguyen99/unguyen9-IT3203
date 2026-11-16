@@ -89,8 +89,8 @@ table, th, td {
 
 .HTTP-grid {
     display:grid;
+    margin-top:20px;
     background-color:#A3D29B;
-    margin:35px;
 }
 
 .HTTP-header {
@@ -98,13 +98,86 @@ table, th, td {
 }
 
 .HTTP-content h2 {
-    padding-left:100px;
+    padding-left:25px;
 }
 
 .HTTP-content p {
-    padding-left:200px;
-    padding-right:100px;
+    padding-left:75px;
+    padding-right:50px;
 }
+
+/* Quiz */
+
+.question p{
+    font-size:20px;
+    margin-bottom:10px;
+    padding:10px;
+}
+.answer_choices label{
+    display:block;
+    padding:10px;
+    padding-left:20px;
+    font-size:16px;
+    background-color:#b3deab;
+    border:1px solid #90cc88;
+    border-radius: 8px;
+}
+
+.qbox {
+    display:block;
+    margin-bottom:20px;
+    background-color:#F3FEEE;
+    border:1px solid #53A548;
+    border-radius: 8px;
+    padding:20px;
+}
+
+.qlabel:hover {
+    background-color:#82c17a;
+}
+
+.quiz_button:hover {
+    background-color:#82c17a;
+}
+
+.quiz_button {
+    font-size:20px;
+    background-color: #A3D29B;
+    border:1px solid #90cc88;
+    border-radius: 8px;
+    padding:10px;
+    margin:10px;
+}
+
+.quiz_page p{
+    font-size:16px;
+}
+
+#timer {
+    font-size:20px;
+}
+
+.qresult {
+    font-size:16px;
+}
+
+.correct {
+    display:block;
+    background-color: #A3D29B;
+    border:1px solid #90cc88;
+    border-radius: 8px;
+    padding:10px;
+}
+
+.incorrect {
+    display:block;
+    background-color:#e6bcbc;
+    border:1px solid #d49f9f;
+    border-radius: 8px;
+    padding:10px;
+}
+
+
 
 /* Footer */
 
@@ -131,6 +204,10 @@ table, th, td {
 /* Learning Resources */
 
 .learning-resources a {
+    margin:35px;
+}
+
+#course-link {
     margin:35px;
 }
 

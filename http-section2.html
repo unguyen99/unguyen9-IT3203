@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Uyen Nguyen</title>
+        <title>HTTP 2-3</title>
         <link rel="stylesheet" href="style-sheet.css">
     </head>
     <body>
@@ -14,6 +14,7 @@
                 <li><a class="menu-button" href="keyconcepts.html">Key Concepts</a></li>
                 <li><a class="menu-button" href="references.html">References</a></li>
                 <li><a class="menu-button" href="about.html">About me</a></li>
+                <li><a class="menu-button" href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
         <!-- HTTP Section 2 Grid -->
@@ -26,13 +27,15 @@
             <div class="HTTP-content">
                 <h2>HTTP/2</h2>
                 <p>Websites increased in complexity and more users visited websites over time. Google worked on 
-                    a project, SPDY, which eventually developed into HTTP/2. HTTP/2 increased optimization by using a 
-                    binary format instead of the previously used plaintext. HTTP/2 was easily adoptable by
-                    websites transitioning from HTTP/1.1 to HTTP/2 as no major changes were required.
+                    a project, SPDY, a procotol which eventually developed into HTTP/2. The IETF published HTTP/2 as RFC 7540 in 2015. 
+                    HTTP/2 increased optimization by using a binary format instead of the previously used plaintext. HTTP/2 was easily adoptable by
+                    websites transitioning from HTTP/1.1 to HTTP/2 as no major changes were required. However,
+                    HTTP/2 introduced a problem where a lost packet can hold up other requests on the connection.
                 </p>
                 <h2>HTTP/3</h2>
                 <p>HTTP/3 focuses on improving HTTP/2's security and performance. HTTP/3 was based on the QUIC protocol 
-                    which was also developed by Google.
+                    which was also developed by Google. The IETF published QUIC as RFC 9000. Quic is built on top of UDP (User Datagram Protocol).
+                    HTTP/3 uses binary instead of decimal to transmit data. 
                 </p>
             </div>
         </div>

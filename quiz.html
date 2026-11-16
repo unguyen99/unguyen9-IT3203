@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style-sheet.css">
+    </head>
+    <body>
+        <!-- Website Menu -->
+        <nav class="menu">
+            <ul>
+                <li><a class="menu-button" href="index.html">Home</a></li>
+                <li><a class="menu-button" href="http-section1.html">HTTP 0.9-1.1</a></li>
+                <li><a class="menu-button" href="http-section2.html">HTTP 2-3</a></li>
+                <li><a class="menu-button" href="keyconcepts.html">Key Concepts</a></li>
+                <li><a class="menu-button" href="references.html">References</a></li>
+                <li><a class="menu-button" href="about.html">About me</a></li>
+                <li><a class="menu-button" href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <!-- Quiz -->
+        <main >
+
+            <h1>Quiz</h1>
+            
+            <!-- Timer -->
+            <p>Clicking "Start Quiz" will start the 10 minute timer.</p>
+            <p>Time Left: </p><p id="timer">00</p>
+            <button type="button" class="quiz_button" id="start_button" onclick="quizStart()">Start Quiz</button>
+
+            <!-- Quiz Questions and Answers-->
+            <form id="quiz">
+
+                <div class="qbox">
+                    <p class="question"><b>Q1. What HTTP version became an official standard?</b></p>
+                    <div class="answer_choices">
+                        
+                        <label for="q1_choice1" class="qlabel"><input type="radio" id="q1_choice1" name="q1" value="HTTP/1.0"> HTTP/1.0</label><br>
+                        <label for="q1_choice2" class="qlabel"><input type="radio" id="q1_choice2" name="q1" value="HTTP/1.1"> HTTP/1.1</label><br>
+                        <label for="q1_choice3" class="qlabel"><input type="radio" id="q1_choice3" name="q1" value="HTTP/2"> HTTP/2</label><br>
+                        <label for="q1_choice4" class="qlabel"><input type="radio" id="q1_choice4" name="q1" value="HTTP/3"> HTTP/3</label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q2. What was the method in HTTP 0.9's header? (Write in uppercase)</b></p>
+                    <div class="answer_choices">
+                        <label for="q2_text" class="qlabel">Method: <input type="text" id="q2_text" name="q2"><br></label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q3. What method does HTTP not have?</b></p>
+                    <div class="answer_choices">
+                        <label for="q3_choice1" class="qlabel"><input type="radio" id="q3_choice1" name="q3" value="GET"> GET</label><br>
+                        <label for="q3_choice2" class="qlabel"><input type="radio" id="q3_choice2" name="q3" value="POST"> POST</label><br>
+                        <label for="q3_choice3" class="qlabel"><input type="radio" id="q3_choice3" name="q3" value="END"> END</label><br>
+                        <label for="q3_choice4" class="qlabel"><input type="radio" id="q3_choice4" name="q3" value="PUT"> PUT</label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q4. Which HTTP versions had Google involved? Select all the correct answers.</b></p>
+                    <div class="answer_choices">
+                        <label for="q4_check1" class="qlabel"><input type="checkbox" id="q4_check1" name="q4" value="HTTP/1.0"> HTTP/1.0</label><br>
+                        <label for="q4_check2" class="qlabel"><input type="checkbox" id="q4_check2" name="q4" value="HTTP/1.1"> HTTP/1.1</label><br>
+                        <label for="q4_check3" class="qlabel"><input type="checkbox" id="q4_check3" name="q4" value="HTTP/2"> HTTP/2</label><br>
+                        <label for="q4_check4" class="qlabel"><input type="checkbox" id="q4_check4" name="q4" value="HTTP/3"> HTTP/3</label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q5. What HTTP status code indicates client error?</b></p>
+                    <div class="answer_choices">
+                        <label for="q5_choice1" class="qlabel"><input type="radio" id="q5_choice1" name="q5" value="1xx"> 1xx</label><br>
+                        <label for="q5_choice2" class="qlabel"><input type="radio" id="q5_choice2" name="q5" value="2xx"> 2xx</label><br>
+                        <label for="q5_choice3" class="qlabel"><input type="radio" id="q5_choice3" name="q5" value="3xx"> 3xx</label><br>
+                        <label for="q5_choice4" class="qlabel"><input type="radio" id="q5_choice4" name="q5" value="4xx"> 4xx</label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q6. What format does HTTP/3 use to transmit data?</b></p>
+                    <div class="answer_choices">
+                        <label for="q6_choice1" class="qlabel"><input type="radio" id="q6_choice1" name="q6" value="Binary"> Binary</label><br>
+                        <label for="q6_choice2" class="qlabel"><input type="radio" id="q6_choice2" name="q6" value="Decimal"> Decimal</label><br>
+                        <label for="q6_choice3" class="qlabel"><input type="radio" id="q6_choice3" name="q6" value="Hexadecimal"> Hexadecimal</label><br>
+                        <label for="q6_choice4" class="qlabel"><input type="radio" id="q6_choice4" name="q6" value="Octal"> Octal</label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q7. What new features did HTTP/1.0 add? Select all the correct answers.</b></p>
+                    <div class="answer_choices">
+                        <label for="q7_check1" class="qlabel"><input type="checkbox" id="q7_check1" name="q7" value="HTTP/1.0"> Including HTTP Version</label><br>
+                        <label for="q7_check2" class="qlabel"><input type="checkbox" id="q7_check2" name="q7" value="HTTP/1.1"> Status Codes</label><br>
+                        <label for="q7_check3" class="qlabel"><input type="checkbox" id="q7_check3" name="q7" value="HTTP/2"> Pipelining</label><br>
+                        <label for="q7_check4" class="qlabel"><input type="checkbox" id="q7_check4" name="q7" value="HTTP/3"> Multiplexed Protocol</label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q8. What protocol was HTTP/2 built on? (Write in uppercase)</b></p>
+                    <div class="answer_choices">
+                        <label for="q8_text" class="qlabel">Protocol: <input type="text" id="q8_text" name="q8"><br></label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q9. What does RFC stand for?</b></p>
+                    <div class="answer_choices">
+                        <label for="q9_choice1" class="qlabel"><input type="radio" id="q9_choice1" name="q9" value="a"> Retrieve Form Comments</label><br>
+                        <label for="q9_choice2" class="qlabel"><input type="radio" id="q9_choice2" name="q9" value="b"> Request For Comments</label><br>
+                        <label for="q9_choice3" class="qlabel"><input type="radio" id="q9_choice3" name="q9" value="c"> Registered Financial Consultant</label><br>
+                        <label for="q9_choice4" class="qlabel"><input type="radio" id="q9_choice4" name="q9" value="d"> Review For Contents</label><br>
+                    </div>
+                </div>
+
+                <div class="qbox">
+                    <p class="question"><b>Q10. In HTTP/0.9, what happens to the connection after the request-response exchange is done?</b></p>
+                    <div class="answer_choices">
+                        <label for="q10_choice1" class="qlabel"><input type="radio" id="q10_choice1" name="q10" value="a"> The connection remains open</label><br>
+                        <label for="q10_choice2" class="qlabel"><input type="radio" id="q10_choice2" name="q10" value="b"> Another connection automatically opens</label><br>
+                        <label for="q10_choice3" class="qlabel"><input type="radio" id="q10_choice3" name="q10" value="c"> The connection closes</label><br>
+                        <label for="q10_choice4" class="qlabel"><input type="radio" id="q10_choice4" name="q10" value="d"> There is no connection</label><br>
+                    </div>
+                </div>
+
+                <button type="button" class="quiz_button" id="submit_button" onclick="quizResult()">Submit</button>
+                <button type="button" class="quiz_button" id="reset_button" onclick="resetQuiz()">Reset</button>
+
+            </form>
+
+            <!-- Quiz Results -->
+        
+            <br><div id="quizresult"></div>
+
+        </main>
+
+
+        <!-- JavaScript -->
+        <script>
+            // Set up variables for quiz and timers
+            // Hide the quiz contents until user clicks Start Quiz
+            const quiz = document.getElementById("quiz");
+            var intervalid;
+            quiz.style.display="none";
+            const start_button = document.getElementById("start_button");
+            const timerCount = document.getElementById("timer");
+            let timeLeft = 600;
+            
+            // When user clicks reset button the timer clears and the quiz resets
+            function resetQuiz() {
+                document.getElementById("quiz").reset();
+                const result = document.getElementById("quizresult");
+                result.style.display="none";
+                quiz.style.display="none";
+                start_button.style.display="inline-block";
+                clearInterval(intervalid);
+            }
+
+            // Reveals the quiz when user clicks on start and starts the timer
+            function quizStart() {
+                timeLeft = 600;
+                quiz.style.display="inline-block";
+                start_button.style.display="none";
+                if (intervalid) {
+                    clearInterval(intervalid);
+                }
+                intervalid = setInterval (() => {
+                    timeLeft--;
+                    timerCount.innerHTML = timeLeft;
+                    if (timeLeft <= 0) {
+                        clearInterval(intervalid)
+                        resetQuiz();
+                    }
+                }, 1000);
+                
+
+                
+            }
+
+            // Check if the user's inputs are correct
+            // At the end displays the score and what questions user got correct or incorrect
+            // Also displays whether user passes or fails and the amount of time spent on quiz
+            function quizResult() {
+                let score = 0;
+                let feedback = "";
+
+                const q1 = document.getElementById("q1_choice2").checked;
+                if (q1) {
+                    score++;
+                    feedback += "<p class='correct'> Q1. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q1. Incorrect. Answer: HTTP/1.1 </p><br>";
+                }
+
+                const q2 = document.getElementById("q2_text").value;
+                if (q2 == "GET") {
+                    score++;
+                    feedback += "<p class='correct'> Q2. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q2. Incorrect. Answer: GET </p><br>";
+                }
+
+                const q3 = document.getElementById("q3_choice3").checked;
+                if (q3) {
+                    score++;
+                    feedback += "<p class='correct'> Q3. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q2. Incorrect. Answer: END </p><br>";
+                }
+
+                const q4_3 = document.getElementById("q4_check3").checked;
+                const q4_4 = document.getElementById("q4_check4").checked;
+                let correct1 = 0;
+                if (q4_3) {
+                    correct1++;
+                }
+                if (q4_4) {
+                    correct1++;
+                }
+                
+                if (correct1 == 2) {
+                    feedback += "<p class='correct'> Q4. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q4. Incorrect. Answers: HTTP/2 and HTTP/3 </p><br>";
+                }
+
+                const q5 = document.getElementById("q5_choice4").checked;
+                if (q5) {
+                    score++;
+                    feedback += "<p class='correct'> Q5. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q5. Incorrect. Answer: 4xx </p><br>";
+                }
+
+                const q6 = document.getElementById("q6_choice1").checked;
+                if (q6) {
+                    score++;
+                    feedback += "<p class='correct'> Q6. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q6. Incorrect. Answer: Binary </p><br>";
+                }
+
+                const q7_1 = document.getElementById("q7_check1").checked;
+                const q7_2 = document.getElementById("q7_check2").checked;
+                let correct2 = 0;
+                if (q7_1) {
+                    correct2++;
+                }
+                if (q7_2) {
+                    correct2++;
+                }
+                
+                if (correct2 == 2) {
+                    feedback += "<p class='correct'> Q7. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q7. Incorrect. Answers: Including HTTP Version and Status Codes </p><br>";
+                }
+
+                const q8 = document.getElementById("q8_text").value;
+                if (q8 == "SPDY") {
+                    score++;
+                    feedback += "<p class='correct'> Q8. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q8. Incorrect. Answer: SPDY </p><br>";
+                }
+
+                const q9 = document.getElementById("q9_choice2").checked;
+                if (q9) {
+                    score++;
+                    feedback += "<p class='correct'> Q9. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q9. Incorrect. Answer: Request For Comments </p><br>";
+                }
+
+                const q10 = document.getElementById("q10_choice3").checked;
+                if (q10) {
+                    score++;
+                    feedback += "<p class='correct'> Q10. Correct. </p><br>";
+                }
+                else {
+                    feedback += "<p class='incorrect'> Q10. Incorrect. Answer: The connection closes </p><br>";
+                }
+                
+
+                if (score >= 7) {
+                    feedback += "<p class='qresult'><b> You passed the quiz. </b></p><br>";
+                }
+                else {
+                    feedback += "<p class='qresult'><b> You failed the quiz. </b></p><br>";
+                }
+                
+                let score_time = document.getElementById("timer");
+
+                timeLeft = 600 - timeLeft;
+                
+                feedback += "<p class='qresult'><b> Total Score: " + score + "</b></p><br>";
+                feedback += "<p class='qresult'><b> Time spent: " + timeLeft + " seconds </b></p>";
+                
+                const quiz_feedback = document.getElementById("quizresult");
+                quiz_feedback.innerHTML = feedback;
+                quiz_feedback.style.display="inline-block";
+                clearInterval(intervalid);
+
+            }
+
+        </script>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>IT 3203 Class Web Development Project</p>
+        </div>
+
+        </body>
+        </html>
